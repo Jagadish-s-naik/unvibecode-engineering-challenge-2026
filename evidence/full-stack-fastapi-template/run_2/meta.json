@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "name": "full-stack-fastapi-template",
+    "path": "repos/full-stack-fastapi-template",
+    "url": "https://github.com/fastapi/full-stack-fastapi-template",
+    "commit": "aabb90126964a164e02aff39e7c385bb0598236d",
+    "description": "Polyglot repo mixing Python (FastAPI), TypeScript/React, Docker, SQL"
+  },
+  "run_id": 2,
+  "exit_code": 0,
+  "wall_time_seconds": 96.505,
+  "command": "C:\\xampp\\htdocs\\unvibecode-challenge\\.venv\\Scripts\\python.exe -m unvibecode review --repository repos/full-stack-fastapi-template --output evidence\\full-stack-fastapi-template\\run_2\\results --no-open-browser",
+  "timestamp": "2026-11-13 10:25:48"
+}

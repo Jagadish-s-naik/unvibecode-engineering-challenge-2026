@@ -1,0 +1,24 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/dc5fbd532d954df2934a50af438903ee/input/chardet
+Parsing source files: 81
+[STAGE 1 COMPLETE] 81 files, 127 internal file edges, 0 package-level edges, 61 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-37_4acwf/c/run/shipreadyv2_resolved_graph.json
+Files indexed: 81
+Imports: 107 resolved, 0 package-level, 0 partial, 81 unresolved, 0 hard-path skipped, 0 uncertain
+Python enrichment: 53 files, 97 safe constants, 0 dynamic imports marked
+Symbols: 126/232 resolved; 15 ambiguous names in index
+Symbol edges added: 130
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 FAST LANE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/dc5fbd532d954df2934a50af438903ee/input/chardet
+Run folder:    /tmp/uvc-37_4acwf/c/run
+Profile JSON:  /tmp/uvc-37_4acwf/c/run/fast_lane_repository_profile.json
+Resolved JSON: /tmp/uvc-37_4acwf/c/run/shipreadyv2_resolved_graph.json
+Symbol graph:  /tmp/uvc-37_4acwf/c/run/fast_lane_symbol_resolution_graph.html
+Click downloads: 79 files, 286 code sections, prepared in 1.277s
+Context JSON:  /tmp/uvc-37_4acwf/c/run/fast_lane_context_store.json
+Complete ZIP:  /tmp/uvc-37_4acwf/c/run/shipready_complete_repository_context.zip
+Context timing: {'code_sections': 0.644, 'connections': 0.018, 'download_selections': 0.128, 'browser_store': 0.099, 'zip_bundle': 0.358}
+Timing:        {'graph_build_seconds': 1.053, 'linker_seconds': 0.928, 'context_download_preparation_seconds': 1.277, 'html_render_seconds': 1.139, 'fast_lane_total_seconds': 4.397}

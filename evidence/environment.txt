@@ -1,0 +1,13 @@
+Name: unvibecode
+Version: 0.4.0
+Summary: Analyze repositories using the hosted UnvibeCode engine
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: C:\xampp\htdocs\unvibecode-challenge\.venv\Lib\site-packages
+Requires: 
+Required-by: 
+
+Python version: 3.14.2 (CPython)
+OS: Windows-11-10.0.26300-SP0 (AMD64)

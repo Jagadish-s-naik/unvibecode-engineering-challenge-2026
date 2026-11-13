@@ -1,0 +1,306 @@
+{
+  "overall_precision": 0.0258,
+  "overall_recall": 0.0543,
+  "total_targets_sampled": 24,
+  "targets": [
+    {
+      "repo": "flask",
+      "target": "src/flask/app.py::Flask.dispatch_request",
+      "gt_calls_count": 5,
+      "uvc_edges_from_file": 12,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "ensure_sync",
+        "raise_routing_exception",
+        "getattr"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/app.py::Flask.full_dispatch_request",
+      "gt_calls_count": 5,
+      "uvc_edges_from_file": 12,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "finalize_request",
+        "dispatch_request",
+        "preprocess_request"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/app.py::Flask.make_response",
+      "gt_calls_count": 12,
+      "uvc_edges_from_file": 12,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "response_class",
+        "len",
+        "response"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/app.py::Flask.wsgi_app",
+      "gt_calls_count": 10,
+      "uvc_edges_from_file": 12,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "handle_exception",
+        "push",
+        "response"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/app.py::Flask.add_url_rule",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 12,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/blueprints.py::Blueprint.route",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 4,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/blueprints.py::Blueprint.add_url_rule",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 4,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/templating.py::render_template",
+      "gt_calls_count": 3,
+      "uvc_edges_from_file": 1,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "_get_current_object",
+        "_render",
+        "get_or_select_template"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/helpers.py::url_for",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 1,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "url_for"
+      ]
+    },
+    {
+      "repo": "flask",
+      "target": "src/flask/helpers.py::flash",
+      "gt_calls_count": 4,
+      "uvc_edges_from_file": 1,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "_get_current_object",
+        "get",
+        "append"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/schema.py::Schema.dump",
+      "gt_calls_count": 3,
+      "uvc_edges_from_file": 19,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "_invoke_dump_processors",
+        "bool",
+        "_serialize"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/schema.py::Schema.load",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 19,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "_do_load"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/schema.py::Schema.validate",
+      "gt_calls_count": 2,
+      "uvc_edges_from_file": 19,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "cast",
+        "_do_load"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/fields.py::Field._serialize",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 11,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/fields.py::Field._deserialize",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 11,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/fields.py::Nested._serialize",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 11,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "dump"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/decorators.py::post_load",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 0,
+      "matched_true_positives": 0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "set_hook"
+      ]
+    },
+    {
+      "repo": "marshmallow",
+      "target": "src/marshmallow/decorators.py::pre_dump",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 0,
+      "matched_true_positives": 0,
+      "precision": 1.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "set_hook"
+      ]
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_manager.py::PluginManager.register",
+      "gt_calls_count": 15,
+      "uvc_edges_from_file": 9,
+      "matched_true_positives": 3,
+      "precision": 0.333,
+      "recall": 0.2,
+      "sample_missed_calls": [
+        "values",
+        "has_spec",
+        "_verify_hook"
+      ]
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_manager.py::PluginManager.unregister",
+      "gt_calls_count": 5,
+      "uvc_edges_from_file": 9,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "get_hookcallers",
+        "get_plugin",
+        "get"
+      ]
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_hooks.py::HookCaller.__call__",
+      "gt_calls_count": 5,
+      "uvc_edges_from_file": 1,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "copy",
+        "get",
+        "is_historic"
+      ]
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_hooks.py::HookCaller._hookexec",
+      "gt_calls_count": 0,
+      "uvc_edges_from_file": 1,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": []
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_callers.py::_multicall",
+      "gt_calls_count": 17,
+      "uvc_edges_from_file": 4,
+      "matched_true_positives": 2,
+      "precision": 0.5,
+      "recall": 0.118,
+      "sample_missed_calls": [
+        "throw",
+        "next",
+        "force_exception"
+      ]
+    },
+    {
+      "repo": "pluggy",
+      "target": "src/pluggy/_manager.py::PluginManager.get_plugins",
+      "gt_calls_count": 1,
+      "uvc_edges_from_file": 9,
+      "matched_true_positives": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "sample_missed_calls": [
+        "values"
+      ]
+    }
+  ]
+}

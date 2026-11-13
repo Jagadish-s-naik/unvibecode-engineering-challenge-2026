@@ -1,0 +1,110 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/87ef55e6d1a844d08865624774c377e4/input/marshmallow
+Parsing source files: 41
+[STAGE 1 COMPLETE] 41 files, 47 internal file edges, 0 package-level edges, 156 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_resolved_graph.json
+Files indexed: 41
+Imports: 41 resolved, 0 package-level, 22 partial, 140 unresolved, 0 hard-path skipped, 0 uncertain
+Python enrichment: 37 files, 10 safe constants, 0 dynamic imports marked
+Symbols: 148/256 resolved; 12 ambiguous names in index
+Symbol edges added: 152
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: /opt/unvibecode-engine/api-jobs/public-preview/87ef55e6d1a844d08865624774c377e4/input/marshmallow
+Resolved graph: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_resolved_graph.json
+Atomic chunks: 387
+Chunk relationships: 537
+LLM batches: 27
+Feed: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 27
+Semantic packs: 4
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 56,888 tokens, 6 source batches, 1 component(s), within-range
+  semantic_pack_002: 57,735 tokens, 5 source batches, 1 component(s), within-range
+  semantic_pack_003: 44,381 tokens, 4 source batches, 2 component(s), within-range
+  semantic_pack_004: 53,703 tokens, 12 source batches, 12 component(s), within-range
+Semantic feed: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/87ef55e6d1a844d08865624774c377e4/input/marshmallow
+Run folder:    /tmp/uvc-h8hvbs4v/b/run
+Resolved JSON: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_resolved_graph.json
+LLM feed:      /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_llm_feed.jsonl
+Semantic feed: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:/tmp/unvibecode-engine-vtpq4j0p/engine/archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  4
+LLM requests:    7
+Request tokens: min=40,337, avg=50,976, max=67,599
+Requests per semantic pack:
+  semantic_pack_001: 2
+  semantic_pack_002: 2
+  semantic_pack_003: 1
+  semantic_pack_004: 2
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Environment:/tmp/unvibecode-engine-vtpq4j0p/engine/.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 7 prepared requests; selected=7; reused=0; pending=7
+Running 7 pending Pass 1 request(s) with concurrency=2; each request gets one initial attempt and at most one validation correction.
+[1/7] START semantic_pack_001_part_01 | attempt=1/2, input=51,383, reasoning=low, max_output=32,000
+[2/7] START semantic_pack_001_part_02 | attempt=1/2, input=50,104, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_001_part_02 attempt 1 still processing (10s elapsed)
+[1/7] DONE semantic_pack_001_part_01 in 11.1s | input=58448, cached=6579, output=1048, reasoning=144 | paths=0, facts=0, evidence=6
+[3/7] START semantic_pack_002_part_01 | attempt=1/2, input=40,784, reasoning=low, max_output=32,000
+[3/7] DONE semantic_pack_002_part_01 in 5.4s | input=47725, cached=6579, output=542, reasoning=85 | paths=0, facts=0, evidence=3
+[4/7] START semantic_pack_002_part_02 | attempt=1/2, input=61,621, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_02 attempt 1 still processing (20s elapsed)
+[4/7] DONE semantic_pack_002_part_02 in 5.6s | input=68805, cached=6579, output=587, reasoning=124 | paths=0, facts=0, evidence=3
+[5/7] START semantic_pack_003_part_01 | attempt=1/2, input=68,040, reasoning=low, max_output=32,000
+[2/7] DONE semantic_pack_001_part_02 in 29.3s | input=57109, cached=6579, output=3751, reasoning=77 | paths=2, facts=5, evidence=27
+[6/7] START semantic_pack_004_part_01 | attempt=1/2, input=41,839, reasoning=low, max_output=32,000
+  ... semantic_pack_003_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_004_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_003_part_01 attempt 1 still processing (20s elapsed)
+  ... semantic_pack_004_part_01 attempt 1 still processing (20s elapsed)
+[5/7] DONE semantic_pack_003_part_01 in 27.4s | input=75204, cached=6579, output=3607, reasoning=155 | paths=1, facts=3, evidence=23
+[7/7] START semantic_pack_004_part_02 | attempt=1/2, input=46,283, reasoning=low, max_output=32,000
+[7/7] DONE semantic_pack_004_part_02 in 7.8s | input=53233, cached=6579, output=817, reasoning=91 | paths=0, facts=0, evidence=4
+  ... semantic_pack_004_part_01 attempt 1 still processing (30s elapsed)
+  ... semantic_pack_004_part_01 attempt 1 still processing (40s elapsed)
+[6/7] DONE semantic_pack_004_part_01 in 40.6s | input=48745, cached=6579, output=5823, reasoning=94 | paths=2, facts=7, evidence=41
+
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN COMPLETE]
+Completion: COMPLETE
+Successful: 7/7
+Results:    /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_full_results.jsonl
+Trace:      /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_full_trace.jsonl
+Artifacts:  /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_full_artifacts
+[SHIPREADYV2 BUSINESS PATH COMPILER]
+Report folder: /tmp/uvc-h8hvbs4v/b/run
+Pass 1 results: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_full_results.jsonl
+Prepared input: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Resolved graph: /tmp/uvc-h8hvbs4v/b/run/shipreadyv2_resolved_graph.json
+Semantic packs: optional integrity source; not required at runtime
+
+[COMPILATION COMPLETE]
+Scan: COMPLETE (7/7 requests)
+Normalized paths: 5
+Components: 1
+Output: /tmp/uvc-h8hvbs4v/b/run/normalized_business_paths.json
+Workflow context: /tmp/uvc-h8hvbs4v/b/run/business_workflow_context.html
+Coverage: /tmp/uvc-h8hvbs4v/b/run/business_path_coverage.json
+Audit: /tmp/uvc-h8hvbs4v/b/run/business_path_compiler_audit.jsonl

@@ -1,0 +1,81 @@
+{
+  "schema_version": "shipreadyv2.customer_analysis_status.v10",
+  "runner_version": "shipreadyv2.customer_mvp.v10",
+  "updated_at": "2026-11-13T05:03:30.337938+00:00",
+  "analysis_directory": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/unvibecode_results/test_cross_lang-unvibecode-analysis-20261113_050316",
+  "repository": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/input/test_cross_lang",
+  "engine_root": "/tmp/unvibecode-engine-dlcdwjce/engine",
+  "repository_estimate": {
+    "method": "supported_source_bytes_divided_by_3.2",
+    "source_files": 4,
+    "source_bytes": 216,
+    "approximate_tokens": 68,
+    "unreadable_files": []
+  },
+  "large_repository_policy": {
+    "limit_tokens": 2000000,
+    "is_large_repository": false,
+    "decision": "CONNECTED_CODE_MAP_AND_BUSINESS_REVIEW"
+  },
+  "overall_status": "PARTIAL",
+  "lanes": {
+    "FAST_LANE": {
+      "status": "COMPLETED",
+      "message": "Codebase map and connected code downloads are ready",
+      "customer_reason": null,
+      "started_at": "2026-11-13T05:03:16.935698+00:00",
+      "completed_at": "2026-11-13T05:03:16.935727+00:00",
+      "duration_seconds": 0.855,
+      "run_folder": "/tmp/uvc-6chvyo6_/c/run",
+      "artifacts": {
+        "resolved_graph": "/tmp/uvc-6chvyo6_/c/run/shipreadyv2_resolved_graph.json",
+        "repository_profile": "/tmp/uvc-6chvyo6_/c/run/fast_lane_repository_profile.json",
+        "interactive_graph": "/tmp/uvc-6chvyo6_/c/run/fast_lane_symbol_resolution_graph.html",
+        "browser_context_store": "/tmp/uvc-6chvyo6_/c/run/fast_lane_context_store.js",
+        "api_context_store": "/tmp/uvc-6chvyo6_/c/run/fast_lane_context_store.json",
+        "complete_repository_context": "/tmp/uvc-6chvyo6_/c/run/shipready_complete_repository_context.zip",
+        "timing": "/tmp/uvc-6chvyo6_/c/run/fast_lane_timing.json"
+      },
+      "components": {
+        "connected_code_map": "COMPLETED",
+        "repository_context": "COMPLETED"
+      },
+      "error": null
+    },
+    "FULL_ANALYSIS": {
+      "status": "FAILED",
+      "message": "Business Workflow & Risk Review stopped during STEP_04",
+      "customer_reason": "Step 04 did not complete. Results that finished successfully were preserved.",
+      "started_at": "2026-11-13T05:03:30.241112+00:00",
+      "completed_at": "2026-11-13T05:03:30.241136+00:00",
+      "duration_seconds": 14.152,
+      "active_stage": "STEP_04",
+      "completed_stages": [
+        "STEP_01",
+        "STEP_02",
+        "STEP_03"
+      ],
+      "run_folder": "/tmp/uvc-6chvyo6_/b/run",
+      "artifacts": {
+        "report_folder": "/tmp/uvc-6chvyo6_/b/run"
+      },
+      "components": {
+        "business_workflows": "UNAVAILABLE",
+        "risk_findings": "UNAVAILABLE"
+      },
+      "review_outcome": "UNAVAILABLE",
+      "selection_summary": null,
+      "error": {
+        "error_type": "CustomerRunError",
+        "message": "Step 04 returned exit code 1.",
+        "traceback": "Traceback (most recent call last):\n  File \"/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py\", line 1776, in run_full_analysis_worker\n    run_step_four(module, report_folder, engine_root)\n  File \"/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py\", line 1652, in run_step_four\n    normalize_return_code(run_function(from_constants()), \"Step 04\")\n  File \"/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py\", line 1044, in normalize_return_code\n    raise CustomerRunError(f\"{stage_name} returned exit code {value}.\")\nshipreadyv2.customer_runner.CustomerRunError: Step 04 returned exit code 1.\n"
+      }
+    }
+  },
+  "customer_results": {
+    "complete_repository_context": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/unvibecode_results/test_cross_lang-unvibecode-analysis-20261113_050316/test_cross_lang-repository-context.zip",
+    "connected_code_map": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/unvibecode_results/test_cross_lang-unvibecode-analysis-20261113_050316/report-support/connected-code.html",
+    "interim_results_page": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/unvibecode_results/test_cross_lang-unvibecode-analysis-20261113_050316/test_cross_lang-unvibecode-interim.html",
+    "results_landing_page": "/opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/unvibecode_results/test_cross_lang-unvibecode-analysis-20261113_050316/test_cross_lang-unvibecode-full.html"
+  }
+}

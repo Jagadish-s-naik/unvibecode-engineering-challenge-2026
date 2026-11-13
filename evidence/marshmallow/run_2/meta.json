@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "name": "marshmallow",
+    "path": "repos/marshmallow",
+    "url": "https://github.com/marshmallow-code/marshmallow",
+    "commit": "1b1250d576e4df95cae66327c97945169dfd538d",
+    "description": "src/-layout repo with schema nesting, field registry and circular references"
+  },
+  "run_id": 2,
+  "exit_code": 0,
+  "wall_time_seconds": 81.004,
+  "command": "C:\\xampp\\htdocs\\unvibecode-challenge\\.venv\\Scripts\\python.exe -m unvibecode review --repository repos/marshmallow --output evidence\\marshmallow\\run_2\\results --no-open-browser",
+  "timestamp": "2026-11-13 10:12:01"
+}

@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "name": "pluggy",
+    "path": "repos/pluggy",
+    "url": "https://github.com/pytest-dev/pluggy",
+    "commit": "f8aa4a009716a7994f2f6c1947d9fa69feccbdd5",
+    "description": "Plugin/registry-heavy repo (hook specifications & implementations)"
+  },
+  "run_id": 2,
+  "exit_code": 0,
+  "wall_time_seconds": 39.894,
+  "command": "C:\\xampp\\htdocs\\unvibecode-challenge\\.venv\\Scripts\\python.exe -m unvibecode review --repository repos/pluggy --output evidence\\pluggy\\run_2\\results --no-open-browser",
+  "timestamp": "2026-11-13 10:09:11"
+}

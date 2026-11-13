@@ -1,0 +1,114 @@
+UNVIBECODE REPOSITORY REVIEW
+Repository: C:\xampp\htdocs\unvibecode-challenge\repos\full-stack-fastapi-template
+Approximate codebase size: 140,250 tokens across 157 source files
+
+● Code understanding
+  Reading and connecting source files
+  110 of 157 source files processed
+
+● Business analysis
+  Preparing repository context
+
+● Code understanding
+  Creating the interactive code map
+
+● Business analysis
+  Preparing repository context
+
+Interim results available here:
+C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Preparing repository context
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  0 of 5 code areas reviewed
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  1 of 5 code areas reviewed
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  2 of 5 code areas reviewed
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  3 of 5 code areas reviewed
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  4 of 5 code areas reviewed
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+● Business analysis
+  Building the business workflow map
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results:
+  C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-interim.html
+
+✓ Business analysis
+  Ready
+  Business Workflow Map
+
+UNVIBECODE REVIEW COMPLETE · 1m 50s
+Repository: C:\xampp\htdocs\unvibecode-challenge\repos\full-stack-fastapi-template
+Codebase: ~140,250 tokens · 157 source files
+
+Review Results:
+✓ Business Workflow Map — Understand end-to-end business operations reconstructed from the code.
+✓ Connected Code Map — Structured graph of your codebase linking different files and symbols.
+✓ Complete Repository Context — Download the complete normalized repository ZIP for LLM or API analysis.
+
+Key workflows identified:
+1. Item workflows
+2. Account workflows
+3. Request workflows
+
+Complete results available here:
+C:\xampp\htdocs\unvibecode-challenge\evidence\full-stack-fastapi-template\run_1\results\full-stack-fastapi-template-unvibecode-analysis-20261113_045216\full-stack-fastapi-template-unvibecode-full.html

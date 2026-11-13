@@ -1,0 +1,14 @@
+{
+  "repo": {
+    "name": "chardet",
+    "path": "repos/chardet",
+    "url": "https://github.com/chardet/chardet",
+    "commit": "fa905b359cbcaba93a35fd6429ba9ec4b156c1c1",
+    "description": "Encoding tables, non-ASCII datasets, multi-model char distribution"
+  },
+  "run_id": 2,
+  "exit_code": 0,
+  "wall_time_seconds": 204.313,
+  "command": "C:\\xampp\\htdocs\\unvibecode-challenge\\.venv\\Scripts\\python.exe -m unvibecode review --repository repos/chardet --output evidence\\chardet\\run_2\\results --no-open-browser",
+  "timestamp": "2026-11-13 10:22:11"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "pluggy",
+    "stdout_deterministic": false,
+    "zip_stats": {
+      "chunks_count_r1": 116,
+      "chunks_count_r2": 116,
+      "chunks_identical": true,
+      "conns_count_r1": 84,
+      "conns_count_r2": 84,
+      "conns_identical": true
+    }
+  },
+  {
+    "repo": "marshmallow",
+    "stdout_deterministic": false,
+    "zip_stats": {
+      "chunks_count_r1": 435,
+      "chunks_count_r2": 435,
+      "chunks_identical": true,
+      "conns_count_r1": 185,
+      "conns_count_r2": 185,
+      "conns_identical": true
+    }
+  },
+  {
+    "repo": "flask",
+    "stdout_deterministic": false,
+    "zip_stats": {
+      "chunks_count_r1": 484,
+      "chunks_count_r2": 484,
+      "chunks_identical": true,
+      "conns_count_r1": 393,
+      "conns_count_r2": 393,
+      "conns_identical": true
+    }
+  },
+  {
+    "repo": "chardet",
+    "stdout_deterministic": false,
+    "zip_stats": {
+      "chunks_count_r1": 286,
+      "chunks_count_r2": 286,
+      "chunks_identical": true,
+      "conns_count_r1": 256,
+      "conns_count_r2": 256,
+      "conns_identical": true
+    }
+  },
+  {
+    "repo": "full-stack-fastapi-template",
+    "stdout_deterministic": false,
+    "zip_stats": {
+      "chunks_count_r1": 223,
+      "chunks_count_r2": 223,
+      "chunks_identical": true,
+      "conns_count_r1": 213,
+      "conns_count_r2": 213,
+      "conns_identical": true
+    }
+  }
+]

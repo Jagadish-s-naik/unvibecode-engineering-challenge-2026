@@ -1,0 +1,107 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/9f9993e2634e46de90bf68f3b168700e/input/full-stack-fastapi-template
+Parsing source files: 157
+[STAGE 1 COMPLETE] 157 files, 76 internal file edges, 0 package-level edges, 594 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-q_5otpge/b/run/shipreadyv2_resolved_graph.json
+Files indexed: 157
+Imports: 77 resolved, 0 package-level, 4 partial, 386 unresolved, 203 hard-path skipped, 0 uncertain
+Python enrichment: 42 files, 5 safe constants, 0 dynamic imports marked
+Symbols: 135/1,110 resolved; 21 ambiguous names in index
+Symbol edges added: 138
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: /opt/unvibecode-engine/api-jobs/public-preview/9f9993e2634e46de90bf68f3b168700e/input/full-stack-fastapi-template
+Resolved graph: /tmp/uvc-q_5otpge/b/run/shipreadyv2_resolved_graph.json
+Atomic chunks: 206
+Chunk relationships: 272
+LLM batches: 39
+Feed: /tmp/uvc-q_5otpge/b/run/shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 39
+Semantic packs: 3
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 53,985 tokens, 10 source batches, 1 component(s), within-range
+  semantic_pack_002: 43,390 tokens, 6 source batches, 6 component(s), within-range
+  semantic_pack_003: 73,370 tokens, 23 source batches, 23 component(s), within-range
+Semantic feed: /tmp/uvc-q_5otpge/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/9f9993e2634e46de90bf68f3b168700e/input/full-stack-fastapi-template
+Run folder:    /tmp/uvc-q_5otpge/b/run
+Resolved JSON: /tmp/uvc-q_5otpge/b/run/shipreadyv2_resolved_graph.json
+LLM feed:      /tmp/uvc-q_5otpge/b/run/shipreadyv2_llm_feed.jsonl
+Semantic feed: /tmp/uvc-q_5otpge/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  /tmp/uvc-q_5otpge/b/run/shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:/tmp/unvibecode-engine-fw39f0pp/engine/archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  3
+LLM requests:    5
+Request tokens: min=35,451, avg=52,166, max=67,716
+Requests per semantic pack:
+  semantic_pack_001: 2
+  semantic_pack_002: 1
+  semantic_pack_003: 2
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Environment:/tmp/unvibecode-engine-fw39f0pp/engine/.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 5 prepared requests; selected=5; reused=0; pending=5
+Running 5 pending Pass 1 request(s) with concurrency=2; each request gets one initial attempt and at most one validation correction.
+[1/5] START semantic_pack_001_part_01 | attempt=1/2, input=49,656, reasoning=low, max_output=32,000
+[2/5] START semantic_pack_001_part_02 | attempt=1/2, input=46,231, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_001_part_02 attempt 1 still processing (10s elapsed)
+[2/5] DONE semantic_pack_001_part_02 in 14.4s | input=53505, cached=6579, output=1308, reasoning=106 | paths=0, facts=0, evidence=8
+[3/5] START semantic_pack_002_part_01 | attempt=1/2, input=63,184, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_01 attempt 1 still processing (20s elapsed)
+  ... semantic_pack_002_part_01 attempt 1 still processing (10s elapsed)
+[1/5] DONE semantic_pack_001_part_01 in 24.9s | input=56801, cached=6579, output=3115, reasoning=136 | paths=1, facts=5, evidence=22
+[4/5] START semantic_pack_003_part_01 | attempt=1/2, input=68,271, reasoning=low, max_output=32,000
+[3/5] DONE semantic_pack_002_part_01 in 19.8s | input=70671, cached=6579, output=2535, reasoning=122 | paths=1, facts=5, evidence=18
+[5/5] START semantic_pack_003_part_02 | attempt=1/2, input=36,006, reasoning=low, max_output=32,000
+  ... semantic_pack_003_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_003_part_02 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_003_part_01 attempt 1 still processing (20s elapsed)
+[4/5] DONE semantic_pack_003_part_01 in 22.1s | input=75012, cached=6579, output=2749, reasoning=168 | paths=1, facts=2, evidence=16
+  ... semantic_pack_003_part_02 attempt 1 still processing (20s elapsed)
+  ... semantic_pack_003_part_02 attempt 1 still processing (30s elapsed)
+  ... semantic_pack_003_part_02 attempt 1 still processing (40s elapsed)
+  ... semantic_pack_003_part_02 attempt 1 still processing (50s elapsed)
+  ... semantic_pack_003_part_02 attempt 1 still processing (60s elapsed)
+[5/5] DONE semantic_pack_003_part_02 in 64.8s | input=43142, cached=6579, output=9979, reasoning=174 | paths=3, facts=12, evidence=56
+
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN COMPLETE]
+Completion: COMPLETE
+Successful: 5/5
+Results:    /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_full_results.jsonl
+Trace:      /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_full_trace.jsonl
+Artifacts:  /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_full_artifacts
+[SHIPREADYV2 BUSINESS PATH COMPILER]
+Report folder: /tmp/uvc-q_5otpge/b/run
+Pass 1 results: /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_full_results.jsonl
+Prepared input: /tmp/uvc-q_5otpge/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Resolved graph: /tmp/uvc-q_5otpge/b/run/shipreadyv2_resolved_graph.json
+Semantic packs: optional integrity source; not required at runtime
+
+[COMPILATION COMPLETE]
+Scan: COMPLETE (5/5 requests)
+Normalized paths: 6
+Components: 6
+Output: /tmp/uvc-q_5otpge/b/run/normalized_business_paths.json
+Workflow context: /tmp/uvc-q_5otpge/b/run/business_workflow_context.html
+Coverage: /tmp/uvc-q_5otpge/b/run/business_path_coverage.json
+Audit: /tmp/uvc-q_5otpge/b/run/business_path_compiler_audit.jsonl

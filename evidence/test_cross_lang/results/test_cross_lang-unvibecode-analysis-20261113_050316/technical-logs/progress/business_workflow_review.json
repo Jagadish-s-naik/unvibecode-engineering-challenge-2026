@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-11-13T05:03:30.234326+00:00",
+  "updated_epoch": 1794546210.234349,
+  "percent": 65,
+  "phase": "FAILED",
+  "message": "Needs attention",
+  "detail": "Step 04 did not complete. Results that finished successfully were preserved.",
+  "report_folder": "/tmp/uvc-6chvyo6_/b/run"
+}

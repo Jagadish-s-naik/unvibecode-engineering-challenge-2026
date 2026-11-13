@@ -1,0 +1,88 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/18ad42b963554ff49ddb8b2cf76a887d/input/pluggy
+Parsing source files: 29
+[STAGE 1 COMPLETE] 29 files, 40 internal file edges, 0 package-level edges, 148 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_resolved_graph.json
+Files indexed: 29
+Imports: 64 resolved, 0 package-level, 0 partial, 124 unresolved, 0 hard-path skipped, 0 uncertain
+Python enrichment: 29 files, 0 safe constants, 0 dynamic imports marked
+Symbols: 64/155 resolved; 3 ambiguous names in index
+Symbol edges added: 64
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: /opt/unvibecode-engine/api-jobs/public-preview/18ad42b963554ff49ddb8b2cf76a887d/input/pluggy
+Resolved graph: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_resolved_graph.json
+Atomic chunks: 112
+Chunk relationships: 167
+LLM batches: 12
+Feed: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 12
+Semantic packs: 1
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 53,608 tokens, 12 source batches, 8 component(s), within-range
+Semantic feed: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/18ad42b963554ff49ddb8b2cf76a887d/input/pluggy
+Run folder:    /tmp/uvc-b9u6_82w/b/run
+Resolved JSON: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_resolved_graph.json
+LLM feed:      /tmp/uvc-b9u6_82w/b/run/shipreadyv2_llm_feed.jsonl
+Semantic feed: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  /tmp/uvc-b9u6_82w/b/run/shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:/tmp/unvibecode-engine-jm23lkzt/engine/archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  1
+LLM requests:    2
+Request tokens: min=44,183, avg=47,825, max=51,467
+Requests per semantic pack:
+  semantic_pack_001: 2
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Environment:/tmp/unvibecode-engine-jm23lkzt/engine/.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 2 prepared requests; selected=2; reused=0; pending=2
+Running 2 pending Pass 1 request(s) with concurrency=2; each request gets one initial attempt and at most one validation correction.
+[1/2] START semantic_pack_001_part_01 | attempt=1/2, input=44,672, reasoning=low, max_output=32,000
+[2/2] START semantic_pack_001_part_02 | attempt=1/2, input=51,956, reasoning=low, max_output=32,000
+  ... semantic_pack_001_part_01 attempt 1 still processing (10s elapsed)
+  ... semantic_pack_001_part_02 attempt 1 still processing (10s elapsed)
+[2/2] DONE semantic_pack_001_part_02 in 13.6s | input=58933, cached=58930, output=1235, reasoning=287 | paths=0, facts=0, evidence=5
+  ... semantic_pack_001_part_01 attempt 1 still processing (20s elapsed)
+[1/2] DONE semantic_pack_001_part_01 in 30.0s | input=51579, cached=51576, output=4103, reasoning=130 | paths=1, facts=3, evidence=21
+
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN COMPLETE]
+Completion: COMPLETE
+Successful: 2/2
+Results:    /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_full_results.jsonl
+Trace:      /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_full_trace.jsonl
+Artifacts:  /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_full_artifacts
+[SHIPREADYV2 BUSINESS PATH COMPILER]
+Report folder: /tmp/uvc-b9u6_82w/b/run
+Pass 1 results: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_full_results.jsonl
+Prepared input: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Resolved graph: /tmp/uvc-b9u6_82w/b/run/shipreadyv2_resolved_graph.json
+Semantic packs: optional integrity source; not required at runtime
+
+[COMPILATION COMPLETE]
+Scan: COMPLETE (2/2 requests)
+Normalized paths: 1
+Components: 1
+Output: /tmp/uvc-b9u6_82w/b/run/normalized_business_paths.json
+Workflow context: /tmp/uvc-b9u6_82w/b/run/business_workflow_context.html
+Coverage: /tmp/uvc-b9u6_82w/b/run/business_path_coverage.json
+Audit: /tmp/uvc-b9u6_82w/b/run/business_path_compiler_audit.jsonl

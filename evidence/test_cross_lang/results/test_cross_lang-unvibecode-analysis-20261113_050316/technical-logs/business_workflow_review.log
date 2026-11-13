@@ -1,0 +1,87 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/input/test_cross_lang
+Parsing source files: 4
+[STAGE 1 COMPLETE] 4 files, 3 internal file edges, 0 package-level edges, 0 unresolved/external imports, 0 symbol edges, 0 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_resolved_graph.json
+Files indexed: 4
+Imports: 3 resolved, 0 package-level, 0 partial, 0 unresolved, 0 hard-path skipped, 0 uncertain
+Python enrichment: 1 files, 0 safe constants, 0 dynamic imports marked
+Symbols: 0/0 resolved; 0 ambiguous names in index
+Symbol edges added: 3
+Go symbol edges promoted: 0; unresolved Go usages: 0
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: /opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/input/test_cross_lang
+Resolved graph: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_resolved_graph.json
+Atomic chunks: 4
+Chunk relationships: 6
+LLM batches: 1
+Feed: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 1
+Semantic packs: 1
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 94 tokens, 1 source batches, 1 component(s), underfilled
+Semantic feed: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/ea19d16a80c14c4c9045c6b0c482729c/input/test_cross_lang
+Run folder:    /tmp/uvc-6chvyo6_/b/run
+Resolved JSON: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_resolved_graph.json
+LLM feed:      /tmp/uvc-6chvyo6_/b/run/shipreadyv2_llm_feed.jsonl
+Semantic feed: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  /tmp/uvc-6chvyo6_/b/run/shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:/tmp/unvibecode-engine-dlcdwjce/engine/archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  1
+LLM requests:    1
+Request tokens: min=10,662, avg=10,662, max=10,662
+Requests per semantic pack:
+  semantic_pack_001: 1
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Environment:/tmp/unvibecode-engine-dlcdwjce/engine/.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 1 prepared requests; selected=1; reused=0; pending=1
+Running 1 pending Pass 1 request(s) with concurrency=1; each request gets one initial attempt and at most one validation correction.
+[1/1] START semantic_pack_001_part_01 | attempt=1/2, input=11,085, reasoning=low, max_output=32,000
+[1/1] DONE semantic_pack_001_part_01 in 9.9s | input=17789, cached=6579, output=854, reasoning=96 | paths=0, facts=0, evidence=8
+
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN COMPLETE]
+Completion: COMPLETE
+Successful: 1/1
+Results:    /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_full_results.jsonl
+Trace:      /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_full_trace.jsonl
+Artifacts:  /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_full_artifacts
+[SHIPREADYV2 BUSINESS PATH COMPILER]
+Report folder: /tmp/uvc-6chvyo6_/b/run
+Pass 1 results: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_full_results.jsonl
+Prepared input: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Resolved graph: /tmp/uvc-6chvyo6_/b/run/shipreadyv2_resolved_graph.json
+Semantic packs: optional integrity source; not required at runtime
+
+[STOPPED] CompilerError: No evidence-valid business path fragments are present
+Error details: /tmp/uvc-6chvyo6_/b/run/business_path_compiler_errors.jsonl
+
+Traceback (most recent call last):
+  File "/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py", line 1776, in run_full_analysis_worker
+    run_step_four(module, report_folder, engine_root)
+  File "/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py", line 1652, in run_step_four
+    normalize_return_code(run_function(from_constants()), "Step 04")
+  File "/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py", line 1044, in normalize_return_code
+    raise CustomerRunError(f"{stage_name} returned exit code {value}.")
+shipreadyv2.customer_runner.CustomerRunError: Step 04 returned exit code 1.
+
